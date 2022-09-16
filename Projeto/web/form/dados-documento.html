@@ -1,0 +1,20 @@
+<div class="container">
+    <h3>Documentos</h3>
+    <div class="row" id="adicionarDocumentos">
+        <div class="form-inline col-lg-6 itemform">
+            <div>
+                <label for="docType">Tipo de Documento:</label>
+            </div>
+            <div>
+                <select class="form-control" name="docType" id="tipoDocumento">
+                    <option value="0"></option>
+                </select>
+            </div>
+            <div>
+                <button class="btn btn-success" onclick="novoDocumento()" id="newDocument">Adicionar</button>
+            </div>
+        </div>
+    </div>
+    <div class="row col-lg-12" id="divDocumentos"></div>
+</div>
+<script src="/form/dadosDocumento.js" type="text/javascript"></script>

@@ -1,0 +1,23 @@
+.sidenav{
+    background-color: #2e3338;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+.sidenav a{
+    text-decoration: none;
+    font-size: 25px;
+    color: gray;
+    display: block;
+}
+
+.sidenav a:hover{
+    color: black;
+}
+
+#itensDireita {
+    float: right;
+}

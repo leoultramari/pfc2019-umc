@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Inscrições Arquivadas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/meucss.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <header><div id="navbar"></div></header>
+        <main id="corpo">
+            <div class="container shadow p-4 mb-4 bg-light">
+                <div style="text-align: center">
+                    <h1>Inscrições Arquivadas</h1>
+                </div>
+                <div class="container row" id="itemform">
+                    <div id="pesquisa"></div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Bairro</th>
+                                <th>Data Recebimento</th>
+                                <th>UE de Inscrição</th>
+                                <th>UE Destino</th>
+                                <th>Data Envio</th>
+                                <th>Status Matrícula</th>
+                                <th>Controle</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lista">
+                        </tbody>
+                    </table>
+                </div>
+                <div id="loader" class="loader"></div>
+            </div></main>
+        <footer><div id="rodape"></div></footer>
+        <script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="/js/popper.min.js" type="text/javascript"></script>
+        <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="/js/formToJSON.js" type="text/javascript"></script>
+        <script src="/js/formatarData.js" type="text/javascript"></script>
+        <script src="/inscricao/visualizarInscricao.js" type="text/javascript"></script>
+        <script src="listaInscricaoArquivada.js" type="text/javascript"></script>
+        <script>
+            $("#navbar").load("/bar/navbar.html");
+            $("#pesquisa").load("/form/pesquisa.html");
+            $("#rodape").load("/bar/rodape.html");
+        </script>
+    </body>
+</html>

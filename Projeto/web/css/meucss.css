@@ -1,0 +1,110 @@
+body{
+    background-color: #1b1e21;
+    height: 100%;
+}
+
+main{
+    min-height: -webkit-fill-available;
+}
+
+#corpo{
+    margin-top: 60px;
+}
+
+#tituloform{text-align: center;}
+
+#itemform{margin: 5px;}
+
+.itemform{margin: 5px;}
+
+table{font-size: 14px;}
+
+#divform{
+    margin-top: 40px;
+    padding: 10px;
+}
+
+#botaoComMargem{margin: 30px 0px 20px 0px;}
+
+h3{margin-top: 10px;}
+
+#navbar{padding: 2px 10px 2px 10px;}
+
+#navbar #inicio{color: white;}
+
+#btn-form{
+    background-color: #1b1e21;
+    color: white;
+}
+
+#div-form{background-color: #1b1e21;}
+
+#btn-form:hover{background-color: #394046;}
+
+.itemDireita{
+    position: absolute;
+    right: 0px;
+}
+
+.itemDireita button{width: 150px;}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: menu;
+    padding: 10px;
+    text-align: center;
+    height: 300px;
+}
+
+.grid-titulo1   { grid-area: 1/1/3/3; font-size: 50px; font: bold;}
+.grid-titulo2   { grid-area: 3/1/3/3; }
+.grid-contato   { grid-area: 1/3/1/5; font-size: 30px;}
+.grid-nome1     { grid-area: 2/3/2/3; }
+.grid-contato1  { grid-area: 3/3/3/3; }
+.grid-nome2     { grid-area: 2/4/2/4; }
+.grid-contato2  { grid-area: 3/4/3/4; }
+
+#editar #link{ color: white;}
+
+i:hover {
+    color: blue;
+    cursor: default;
+}
+
+
+.loader {
+    margin: auto;
+    border: 12px solid gray;
+    border-top: 12px solid lawngreen;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.rodape{
+    background-color: #2e3338;
+    padding: 10px;
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+.rodape-notice{
+    color: grey;
+}
+
+.navbar-context{
+    padding: .375rem .75rem;
+    color: grey;
+}

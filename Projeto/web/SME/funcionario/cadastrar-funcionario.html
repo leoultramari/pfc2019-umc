@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="/css/meucss.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Formulário Funcionário</title>
+    </head>
+
+    <body>
+        <header>
+            <div id="navbar"></div>
+        </header>
+        <main id="corpo">
+            <div class="container shadow p-4 mb-4 bg-light" id="divform">
+                <form id="formulario" action="#" method="POST">
+                    <div class="row">
+                        <div class="form-group  col-lg-2" id="itemform">
+                            <label for="registro">Registro</label>
+                            <input class="form-control" type="number" name="registro" required id='registro'>
+                        </div>
+                        <div class="form-group  col-lg-6" id="itemform">
+                            <label for="nome">Nome</label>
+                            <input class="form-control" type="text" name="nome" required id='nome'>
+                        </div>
+                        <div class="form-group  col-lg-3" id="itemform">
+                            <label for="data-inicio">Início</label>
+                            <input class="form-control" type="date" name="dataInicio" required id='dataInicio'>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group  col-lg-5" id="itemform">
+                            <label for="email">E-mail</label>
+                            <input class="form-control" type="email" name="email" required id='email'>
+                        </div>
+                        <div class="form-group  col-lg-5" id="itemform">
+                            <label for="telefone">Telefone</label>
+                            <input class="form-control" type="text" name="telefone" required id='telefone'>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-lg-6">
+                            <label for="escola">Unidade Escolar</label>
+                            <select class="form-control" name='id_escola' required id="escola">
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+
+                </form>
+                <div class="col-lg-5 mx-auto" id="submit">
+                    <button class="btn btn-primary btn-block" id="btnSubmit">Salvar</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="rodape"></div>
+        </footer>
+        <script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="/js/popper.min.js" type="text/javascript"></script>
+        <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+        <script src="/js/formatarData.js" type="text/javascript"></script>
+        <script src="/js/listaEscola.js" type="text/javascript"></script>
+        <script src="/js/formToJSON.js" type="text/javascript"></script>
+        <script src="cadastroFuncionario.js" type="text/javascript"></script>
+        <script>
+            $("#navbar").load("/bar/navbar.html");
+            $("#rodape").load("/bar/rodape.html");
+        </script>
+    </body>
+
+</html>

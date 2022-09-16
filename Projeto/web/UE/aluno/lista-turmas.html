@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista de Turmas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/meucss.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <header><div id="navbar"></div></header>
+        <main id="corpo">
+            <div class="container shadow p-4 mb-4 bg-light">
+                <div style="text-align: center">
+                    <h1>Turmas</h1>
+                </div>
+                <div class="container row" id="itemform">
+                    <div id="pesquisa"></div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Turma</th>
+                                <th>Ano</th>
+                                <th>Qtde de Alunos</th>
+                                <!--th style="width: 155px">Controle</th-->
+                            </tr>
+                        </thead>
+                        <tbody id="lista">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <footer><div id="rodape"></div></footer>
+        <script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="/js/popper.min.js" type="text/javascript"></script>
+        <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/js/formatarData.js" type="text/javascript"></script>
+        <script src="listaTurma.js" type="text/javascript"></script>
+        <script>
+            $("#navbar").load("/bar/navbar.html");
+            $("#pesquisa").load("/form/pesquisa.html");
+            $("#rodape").load("/bar/rodape.html");
+        </script>
+    </body>
+</html>

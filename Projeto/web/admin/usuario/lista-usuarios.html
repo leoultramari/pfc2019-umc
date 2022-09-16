@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista de Usuários</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/meucss.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header><div id="navbar"></div></header>
+        <main>
+            <div class="container shadow p-4 mb-4 bg-light" id="corpo">
+                <div style="text-align: center">
+                    <h1>Usuários do Sistema</h1>
+                </div>
+                <div class="container row" id="itemform">
+                    <div id="pesquisa"></div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Login</th>
+                                <th>Cargo</th>
+                                <th>Escola</th>
+                                <th style="width: 155px">Controle</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lista">
+                        </tbody>
+                    </table>
+                </div>
+                <div id="loader" class="loader"></div>
+            </div>
+        </main>
+        <footer><div id="rodape"></div></footer>
+        <script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="/js/popper.min.js" type="text/javascript"></script>
+        <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="listarUsuario.js" type="text/javascript"></script>
+        <script>
+            $("#navbar").load("/bar/navbar.html");
+            $("#pesquisa").load("/form/pesquisa.html");
+            $("#rodape").load("/bar/rodape.html");
+        </script>
+    </body>
+</html>
